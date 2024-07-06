@@ -1,0 +1,100 @@
+.containerBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerBanner h1{
+    margin: 0;
+    position: absolute;
+    font-size: 6.25em;
+    color: #ffffff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.containerSabores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 20px;
+    gap: 40px;
+}
+
+.containerSabores h2{
+    font-size: 1.5em;
+}
+
+.largura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    gap: 20px;
+}
+
+.containerSorvetes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 3
+    400px;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 15px 2px;
+    text-align: center;
+}
+
+.containerSorvetes h4{
+    font-size: 1.125em;
+}
+
+.containerSorvetes p{
+    font-size: 1em;
+}
+
+.imgSorvetes{
+    width: 220px;
+    height: 220px;
+}
+
+/*--------------------- responsivo ---------------------*/
+
+@media (max-width: 768px) {
+    .containerBanner  h1 {
+      font-size: 60px;
+    }
+    .containerSabores {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .largura{
+        width: 100%;
+    }
+  
+    .containerSorvetes{
+      padding: 20px 40px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 426px){
+    .containerBanner  h1 {
+      font-size: 45px;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+     
+    }
+  }

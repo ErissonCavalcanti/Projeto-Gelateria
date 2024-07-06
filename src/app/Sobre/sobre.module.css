@@ -1,0 +1,82 @@
+.containerBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBanner {
+  width: 100%;
+  object-fit: cover;
+}
+.containerBanner h1 {
+  margin: 0;
+  position: absolute;
+  font-size: 6.25em;
+  color: #ffffff;
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.containerSobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 20px;
+  gap: 30px;
+}
+
+.containerSobre h2 {
+  font-size: 2em;
+}
+
+.containerSobre h3 {
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+.containerSobre p {
+  font-size: 1em;
+}
+
+.largura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1024px;
+  gap: 20px;
+  text-align: center;
+}
+
+.containerImagem {
+  display: flex;
+  width: 100%;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+}
+
+
+/*-------------- responsivo --------------*/
+
+@media (max-width: 768px){
+  .containerBanner h1 {
+    font-size: 60px;
+  }
+
+  .containerImagem{
+    flex-direction: column;
+  }
+
+  .img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 525px){
+  .containerBanner h1 {
+    font-size: 40px;
+  }
+}
